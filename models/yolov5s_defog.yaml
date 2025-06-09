@@ -9,30 +9,10 @@ anchors:
   - [10,13, 16,30, 33,23]  # P3/8
   - [30,61, 62,45, 59,119]  # P4/16
   - [116,90, 156,198, 373,326]  # P5/32
-
-filters: [
-    DefogFilter, ImprovedWhiteBalanceFilter, GammaFilter,
-    ToneFilter, ContrastFilter, UsmFilter
-]
-
-num_filter_parameters: 15
+num_filter_parameters: 1
 
 defog_begin_param: 0
-wb_begin_param: 1
-gamma_begin_param: 4
-tone_begin_param: 5
-contrast_begin_param: 13
-usm_begin_param: 14
-
-curve_steps: 8
-gamma_range: 3
-exposure_range: 3.5
-wb_range: 1.1
-color_curve_range: [0.90, 1.10]
-lab_curve_range: [0.90, 1.10]
-tone_curve_range: [0.5, 2]
 defog_range: [0.1, 1.0]
-usm_range: [0.0, 5]
 
 # Masking is DISABLED
 masking: False
