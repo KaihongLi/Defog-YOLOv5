@@ -608,7 +608,7 @@ class AdaptiveDetectMultiBackend(nn.Module):
             im = im.permute(0, 2, 3, 1)  # torch BCHW to numpy BHWC shape(1,320,192,3)
 
         if self.pt:  # PyTorch
-            y, recovery_loss, image_isped = self.model(foggy_im, isp_flag=isp_flag, input_data_clean=im, defog_A=defog_A, IcA=IcA, augment=augment, visualize=visualize) if augment or visualize else self.model(isp_flag=isp_flag, input_data_clean=im, defog_A=defog_A, IcA=IcA)
+            y, recovery_loss, image_isped = self.model(foggy_im, isp_flag=isp_flag, input_data_clean=im, defog_A=defog_A, IcA=IcA, augment=augment, visualize=visualize) if augment or visualize else self.model(foggy_im, isp_flag=isp_flag, input_data_clean=im, defog_A=defog_A, IcA=IcA)
         elif self.jit:  # TorchScript
             y = self.model(im)
         elif self.dnn:  # ONNX OpenCV DNN
