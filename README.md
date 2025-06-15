@@ -3,9 +3,15 @@ This repository is an [Image-Adaptive-YOLO](https://github.com/wenyyu/Image-Adap
 
 <div align="center">
 
-  ![VOC_Comparsion](results/VOC/voc_comparison.png)
+  ![VOC_Comparison](results/VOC/voc_comparison.png)
 
   <p align="center">Fig. 1. Visual comparison of related methods on the VOC dataset.</p>
+
+</div>
+
+<div align="center">
+
+ ![Performance_Comparison_on_foggy_images](results/performance_comparison.png)
 
 </div>
 
@@ -135,6 +141,13 @@ $ python hybrid_val.py --weights runs/train/hybrid_yolov5s/weights/best.pt --sou
 ```
 
 ## Main Result
+
+<div align="center">
+
+ ![Performance_Comparison_on_foggy_images](results/performance_comparison.png)
+
+</div>
+
 <br/>
 
 <p align="center"><strong>VOC</strong></p>
