@@ -464,7 +464,7 @@ class AdaptiveDetectionModel(AdaptiveBaseModel):
             mi.bias = torch.nn.Parameter(b.view(-1), requires_grad=True)
 
 
-FoggyModel = AdaptiveDetectionModel  # retain Defog-YOLOv5 'Model' class for backwards compatibility
+AdaptiveModel = AdaptiveDetectionModel  # retain Defog-YOLOv5 'Model' class for backwards compatibility
 
 
 class SegmentationModel(DetectionModel):
