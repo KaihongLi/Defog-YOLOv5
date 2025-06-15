@@ -1,6 +1,8 @@
 # Defog-YOLOv5 (Image-Apaptive YOLO for Object Detection in Adverse Weather Conditions)
 This repository is an [Image-Adaptive-YOLO](https://github.com/wenyyu/Image-Adaptive-YOLO) implementation based on the YOLOv5 Pytroch version.
 
+<br/>
+
 <div align="center">
 
   ![VOC_Comparison](results/VOC/voc_comparison.png)
